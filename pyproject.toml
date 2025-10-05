@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "rag multi modal for doc"
+version = "0.1.0"
+description = "RAG for scientific article"
+authors = ["Mikhail Ozernov"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "3.11.7"
+dotenv = "^0.9.9"
+langchain = "^0.3"
+langchain-core = "^0.3"
+langchain-community = "^0.3"
+langchain-google-genai = "^2.1"
+google-genai = "^1"
+langchain-chroma = "^0.2.6"
+pypdf="5.1.0"
+pdfplumber = "^0.11.7"
+PyMuPDF = "1.24.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+llm-poc = "src.llm_poc.__main__:main"

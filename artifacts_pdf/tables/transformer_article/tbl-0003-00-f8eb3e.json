@@ -1,0 +1,51 @@
+{
+  "table_id": "tbl-0003-00-f8eb3e",
+  "pdf_path": "data\\transformer_article.pdf",
+  "page": 3,
+  "bbox": [
+    107.641,
+    436.54232160000004,
+    505.24856525199993,
+    722.1519216
+  ],
+  "title": null,
+  "headers": [
+    "TheTransformerfollowsthisoverallarchitectureusingstackedself-attentionandpoint-wise,fully"
+  ],
+  "rows": [
+    [
+      "connectedlayersforboththeencoderanddecoder,shownintheleftandrighthalvesofFigure1,"
+    ],
+    [
+      "respectively."
+    ],
+    [
+      ""
+    ],
+    [
+      "3.1 EncoderandDecoderStacks"
+    ],
+    [
+      ""
+    ],
+    [
+      "Encoder: The encoder is composed of a stack of N = 6 identical layers. Each layer has two"
+    ],
+    [
+      "sub-layers. Thefirstisamulti-headself-attentionmechanism,andthesecondisasimple,position-"
+    ],
+    [
+      "wisefullyconnectedfeed-forwardnetwork. Weemployaresidualconnection[11]aroundeachof"
+    ],
+    [
+      "the two sub-layers, followed by layer normalization [1]. That is, the output of each sub-layer is"
+    ],
+    [
+      "LayerNorm(x+Sublayer(x)),whereSublayer(x)isthefunctionimplementedbythesub-layer"
+    ]
+  ],
+  "row_count": 26,
+  "csv_path": "artifacts_pdf\\tables\\transformer_article\\tbl-0003-00-f8eb3e.csv",
+  "json_path": "artifacts_pdf\\tables\\transformer_article\\tbl-0003-00-f8eb3e.json",
+  "preview_text": "Table. Headers: TheTransformerfollowsthisoverallarchitectureusingstackedself-attentionandpoint-wise,fully. Example rows: connectedlayersforboththeencoderanddecoder,shownintheleftandrighthalvesofFigure1, ; respectively."
+}

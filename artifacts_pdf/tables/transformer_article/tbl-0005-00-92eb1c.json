@@ -1,0 +1,51 @@
+{
+  "table_id": "tbl-0005-00-92eb1c",
+  "pdf_path": "data\\transformer_article.pdf",
+  "page": 5,
+  "bbox": [
+    107.532,
+    74.15232159999994,
+    505.7450491319996,
+    722.5761312
+  ],
+  "title": null,
+  "headers": [
+    "output values. These are concatenated and once again projected, resulting in the final values, as"
+  ],
+  "rows": [
+    [
+      "depictedinFigure2."
+    ],
+    [
+      ""
+    ],
+    [
+      "Multi-headattentionallowsthemodeltojointlyattendtoinformationfromdifferentrepresentation"
+    ],
+    [
+      "subspacesatdifferentpositions. Withasingleattentionhead,averaginginhibitsthis."
+    ],
+    [
+      ""
+    ],
+    [
+      "O"
+    ],
+    [
+      "MultiHead(Q,K,V)=Concat(head ,...,head )W\n1 h"
+    ],
+    [
+      ""
+    ],
+    [
+      "Q K V"
+    ],
+    [
+      "wherehead =Attention(QW ,KW ,VW )\ni i i i"
+    ]
+  ],
+  "row_count": 65,
+  "csv_path": "artifacts_pdf\\tables\\transformer_article\\tbl-0005-00-92eb1c.csv",
+  "json_path": "artifacts_pdf\\tables\\transformer_article\\tbl-0005-00-92eb1c.json",
+  "preview_text": "Table. Headers: output values. These are concatenated and once again projected, resulting in the final values, as. Example rows: depictedinFigure2. ; "
+}

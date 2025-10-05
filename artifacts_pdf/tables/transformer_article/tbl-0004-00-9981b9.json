@@ -1,0 +1,51 @@
+{
+  "table_id": "tbl-0004-00-9981b9",
+  "pdf_path": "data\\transformer_article.pdf",
+  "page": 4,
+  "bbox": [
+    107.532,
+    274.2083216,
+    505.652786382,
+    722.6863503999999
+  ],
+  "title": null,
+  "headers": [
+    "Figure 2: (left) Scaled Dot-Product Attention. (right) Multi-Head Attention consists of several"
+  ],
+  "rows": [
+    [
+      "attentionlayersrunninginparallel."
+    ],
+    [
+      ""
+    ],
+    [
+      "ofthevalues,wheretheweightassignedtoeachvalueiscomputedbyacompatibilityfunctionofthe"
+    ],
+    [
+      "querywiththecorrespondingkey."
+    ],
+    [
+      ""
+    ],
+    [
+      "3.2.1 ScaledDot-ProductAttention"
+    ],
+    [
+      ""
+    ],
+    [
+      "Wecallourparticularattention\"ScaledDot-ProductAttention\"(Figure2). Theinputconsistsof"
+    ],
+    [
+      ""
+    ],
+    [
+      "queriesandkeysofdimensiond ,a√ndvaluesofdimensiond . Wecomputethedotproductsofthe\nk v"
+    ]
+  ],
+  "row_count": 53,
+  "csv_path": "artifacts_pdf\\tables\\transformer_article\\tbl-0004-00-9981b9.csv",
+  "json_path": "artifacts_pdf\\tables\\transformer_article\\tbl-0004-00-9981b9.json",
+  "preview_text": "Table. Headers: Figure 2: (left) Scaled Dot-Product Attention. (right) Multi-Head Attention consists of several. Example rows: attentionlayersrunninginparallel. ; "
+}

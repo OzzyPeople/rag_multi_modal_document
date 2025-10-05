@@ -1,0 +1,28 @@
+# Poetry
+poetry.lock
+.poetry/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb~
+notebooks/
+
+# Ignore Chroma DB files
+chroma_db/
+*.sqlite3
+*.bin
+
+#data
+data/
+
+# Environments
+.env
+.venv
+.env/
+
+# IDEs
+.idea/
+
+__pycache__/
+*.py[cod]
+*$py.class
