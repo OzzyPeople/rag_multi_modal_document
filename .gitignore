@@ -12,8 +12,8 @@ chroma_db/
 *.sqlite3
 *.bin
 
-#data
-data/
+#artifacts
+artifacts_pdf/
 
 # Environments
 .env
