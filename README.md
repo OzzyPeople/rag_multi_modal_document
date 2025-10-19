@@ -480,13 +480,33 @@ RAG_MULTI_DOC/
 
 ### Roadmap
 
+**Search**
+- [ ] Hybrid search implementation (BM25, RRF)
+- [ ] Migrate from Chroma DB to Pinecone for managed, scalable vector search
 - [ ] Add retry logic for API calls
-- [ ] Implement cross-encoder reranking
-- [ ] Support multimodal embeddings
-- [ ] Semantic chunking with citations
-- [ ] Table structure repair
-- [ ] Support for more document types (DOCX, HTML)
+- [ ] Try semantic chunking and adaptive sizing
+
+**LLM**
+- [ ] Evaluate local LLM options for cost/privacy tradeoffs
+- [ ] Prompt optimization 
+
+**Evaluation**
+- [ ] Golden Q&A dataset
+- [ ] Uncertainty score - Semantic Similarity (answer ↔ context)
+- [ ] Hallucination Score
+
+**Parsing** - implement two-stage strategy
+1) Where is text? 
+- [ ] Layout analysis - (PDF → Detect layout → Structure → Chunk semantically → Embed)
+
+2) What is text? 
+- [ ] Merge OCR text with Gemini captions for richer context
+- [ ] Support multimodal embeddings - ?
+- [ ] Improve table parse strategy and structure retention
+
+**Other**: 
 - [ ] Batch processing for multiple PDFs
+- [ ] Support for more document types (DOCX, HTML)
 - [ ] Web UI for querying
 
 ---
