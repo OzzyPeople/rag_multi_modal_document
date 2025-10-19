@@ -1,0 +1,1 @@
+2025-10-19 12:03:34 | ERROR    | src.evaluation.evaluate_rag | Evaluation failed after 11.07s: unsupported format string passed to list.__format__

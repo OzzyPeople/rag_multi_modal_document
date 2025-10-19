@@ -1,0 +1,78 @@
+2025-10-19 12:01:54 | INFO     | __main__ | Starting retrieval with model: gemini-2.0-flash
+2025-10-19 12:01:54 | INFO     | __main__ | Initializing embeddings...
+2025-10-19 12:01:54 | INFO     | src.retriever.retriever_collection | Initializing RAGRetriever with collections: ('pdf_text', 'pdf_tables', 'pdf_images'), persist_dir: ./chroma_db
+2025-10-19 12:01:54 | INFO     | src.clients.gemini_client | Initializing GeminiClient with model: gemini-2.0-flash
+2025-10-19 12:01:54 | INFO     | src.retriever.retriever_collection | Answering query: What is attention mechanism?...
+2025-10-19 12:01:54 | INFO     | src.retriever.retriever_collection | Retrieving context for query (k_each=4, top_n=6)
+2025-10-19 12:01:55 | INFO     | src.retriever.retriever_collection | Retrieved 6 documents in 1.17s (from 7 total hits)
+2025-10-19 12:01:55 | INFO     | src.clients.gemini_client | Starting text generation (prompt length: 5311 chars)
+2025-10-19 12:01:57 | INFO     | src.clients.gemini_client | Generation completed in 2.14s (response: 879 chars)
+2025-10-19 12:01:57 | INFO     | src.retriever.retriever_collection | Answer generated in 3.31s (answer length: 879 chars)
+2025-10-19 12:03:20 | INFO     | __main__ | Starting retrieval with model: gemini-2.0-flash
+2025-10-19 12:03:20 | INFO     | __main__ | Initializing embeddings...
+2025-10-19 12:03:20 | INFO     | src.retriever.retriever_collection | Initializing RAGRetriever with collections: ('pdf_text', 'pdf_tables', 'pdf_images'), persist_dir: ./chroma_db
+2025-10-19 12:03:20 | INFO     | src.clients.gemini_client | Initializing GeminiClient with model: gemini-2.0-flash
+2025-10-19 12:03:20 | INFO     | src.retriever.retriever_collection | Answering query: Why there are 8 heads in self-attention mechanism?...
+2025-10-19 12:03:20 | INFO     | src.retriever.retriever_collection | Retrieving context for query (k_each=4, top_n=6)
+2025-10-19 12:03:21 | INFO     | src.retriever.retriever_collection | Retrieved 6 documents in 1.20s (from 7 total hits)
+2025-10-19 12:03:21 | INFO     | src.clients.gemini_client | Starting text generation (prompt length: 5255 chars)
+2025-10-19 12:03:23 | INFO     | src.clients.gemini_client | Generation completed in 1.63s (response: 588 chars)
+2025-10-19 12:03:23 | INFO     | src.retriever.retriever_collection | Answer generated in 2.84s (answer length: 588 chars)
+2025-10-19 12:03:23 | INFO     | __main__ | Starting evaluation...
+2025-10-19 12:03:23 | INFO     | src.evaluation.evaluate_rag | Starting RAG evaluation with model: gemini-2.0-flash-exp
+2025-10-19 12:03:23 | INFO     | src.evaluation.evaluate_rag | Prepared 6 context chunks for evaluation
+2025-10-19 12:03:23 | INFO     | src.evaluation.evaluate_rag | Running RAGAS evaluation (this may take a while)...
+2025-10-19 12:03:34 | INFO     | src.evaluation.evaluate_rag | Evaluation completed in 11.07s (RAGAS: 11.05s)
+2025-10-19 12:03:34 | ERROR    | src.evaluation.evaluate_rag | Evaluation failed after 11.07s: unsupported format string passed to list.__format__
+2025-10-19 12:03:34 | INFO     | __main__ | Retrieval completed successfully
+2025-10-19 12:07:03 | INFO     | __main__ | Starting retrieval with model: gemini-2.0-flash
+2025-10-19 12:07:03 | INFO     | __main__ | Initializing embeddings...
+2025-10-19 12:07:03 | INFO     | src.retriever.retriever_collection | Initializing RAGRetriever with collections: ('pdf_text', 'pdf_tables', 'pdf_images'), persist_dir: ./chroma_db
+2025-10-19 12:07:03 | INFO     | src.clients.gemini_client | Initializing GeminiClient with model: gemini-2.0-flash
+2025-10-19 12:07:03 | INFO     | src.retriever.retriever_collection | Answering query: Why there are 8 heads in self-attention mechanism?...
+2025-10-19 12:07:03 | INFO     | src.retriever.retriever_collection | Retrieving context for query (k_each=4, top_n=6)
+2025-10-19 12:07:04 | INFO     | src.retriever.retriever_collection | Retrieved 6 documents in 1.31s (from 7 total hits)
+2025-10-19 12:07:04 | INFO     | src.clients.gemini_client | Starting text generation (prompt length: 5255 chars)
+2025-10-19 12:07:06 | INFO     | src.clients.gemini_client | Generation completed in 1.45s (response: 430 chars)
+2025-10-19 12:07:06 | INFO     | src.retriever.retriever_collection | Answer generated in 2.76s (answer length: 430 chars)
+2025-10-19 12:07:06 | INFO     | __main__ | Starting evaluation...
+2025-10-19 12:07:06 | INFO     | src.evaluation.evaluate_rag | Starting RAG evaluation with model: gemini-2.0-flash-exp
+2025-10-19 12:07:06 | INFO     | src.evaluation.evaluate_rag | Prepared 6 context chunks for evaluation
+2025-10-19 12:07:06 | INFO     | src.evaluation.evaluate_rag | Running RAGAS evaluation (this may take a while)...
+2025-10-19 12:07:17 | INFO     | src.evaluation.evaluate_rag | Evaluation completed in 11.58s (RAGAS: 11.56s)
+2025-10-19 12:07:17 | INFO     | src.evaluation.evaluate_rag | Results - Faithfulness: 1.0000, Answer Relevancy: 0.8098
+2025-10-19 12:07:17 | INFO     | __main__ | Retrieval completed successfully
+2025-10-19 12:08:30 | INFO     | __main__ | Starting retrieval with model: gemini-2.0-flash
+2025-10-19 12:08:30 | INFO     | __main__ | Initializing embeddings...
+2025-10-19 12:08:30 | INFO     | src.retriever.retriever_collection | Initializing RAGRetriever with collections: ('pdf_text', 'pdf_tables', 'pdf_images'), persist_dir: ./chroma_db
+2025-10-19 12:08:30 | INFO     | src.clients.gemini_client | Initializing GeminiClient with model: gemini-2.0-flash
+2025-10-19 12:08:30 | INFO     | src.retriever.retriever_collection | Answering query: Why there are 8 heads in self-attention mechanism?...
+2025-10-19 12:08:30 | INFO     | src.retriever.retriever_collection | Retrieving context for query (k_each=4, top_n=6)
+2025-10-19 12:08:32 | INFO     | src.retriever.retriever_collection | Retrieved 6 documents in 1.24s (from 7 total hits)
+2025-10-19 12:08:32 | INFO     | src.clients.gemini_client | Starting text generation (prompt length: 5255 chars)
+2025-10-19 12:08:33 | INFO     | src.clients.gemini_client | Generation completed in 1.65s (response: 621 chars)
+2025-10-19 12:08:33 | INFO     | src.retriever.retriever_collection | Answer generated in 2.90s (answer length: 621 chars)
+2025-10-19 12:08:33 | INFO     | __main__ | Starting evaluation...
+2025-10-19 12:08:33 | INFO     | src.evaluation.evaluate_rag | Starting RAG evaluation with model: gemini-2.0-flash-exp
+2025-10-19 12:08:33 | INFO     | src.evaluation.evaluate_rag | Prepared 6 context chunks for evaluation
+2025-10-19 12:08:33 | INFO     | src.evaluation.evaluate_rag | Running RAGAS evaluation (this may take a while)...
+2025-10-19 12:08:46 | INFO     | src.evaluation.evaluate_rag | Evaluation completed in 12.88s (RAGAS: 12.86s)
+2025-10-19 12:08:46 | INFO     | src.evaluation.evaluate_rag | Results - Faithfulness: 1.0000, Answer Relevancy: 0.8066
+2025-10-19 12:08:46 | INFO     | __main__ | Retrieval completed successfully
+2025-10-19 14:19:19 | INFO     | __main__ | Starting retrieval with model: gemini-2.0-flash
+2025-10-19 14:19:19 | INFO     | __main__ | Initializing embeddings...
+2025-10-19 14:19:19 | INFO     | src.retriever.retriever_collection | Initializing RAGRetriever with collections: ('pdf_text', 'pdf_tables', 'pdf_images'), persist_dir: ./chroma_db
+2025-10-19 14:19:19 | INFO     | src.clients.gemini_client | Initializing GeminiClient with model: gemini-2.0-flash
+2025-10-19 14:19:19 | INFO     | src.retriever.retriever_collection | Answering query: Why there are 8 heads in self-attention mechanism?...
+2025-10-19 14:19:19 | INFO     | src.retriever.retriever_collection | Retrieving context for query (k_each=4, top_n=6)
+2025-10-19 14:19:20 | INFO     | src.retriever.retriever_collection | Retrieved 6 documents in 1.29s (from 7 total hits)
+2025-10-19 14:19:20 | INFO     | src.clients.gemini_client | Starting text generation (prompt length: 5255 chars)
+2025-10-19 14:19:22 | INFO     | src.clients.gemini_client | Generation completed in 1.80s (response: 609 chars)
+2025-10-19 14:19:22 | INFO     | src.retriever.retriever_collection | Answer generated in 3.09s (answer length: 609 chars)
+2025-10-19 14:19:22 | INFO     | __main__ | Starting evaluation...
+2025-10-19 14:19:22 | INFO     | src.evaluation.evaluate_rag | Starting RAG evaluation with model: gemini-2.0-flash-exp
+2025-10-19 14:19:22 | INFO     | src.evaluation.evaluate_rag | Prepared 6 context chunks for evaluation
+2025-10-19 14:19:22 | INFO     | src.evaluation.evaluate_rag | Running RAGAS evaluation (this may take a while)...
+2025-10-19 14:19:34 | INFO     | src.evaluation.evaluate_rag | Evaluation completed in 12.65s (RAGAS: 12.64s)
+2025-10-19 14:19:34 | INFO     | src.evaluation.evaluate_rag | Results - Faithfulness: 1.0000, Answer Relevancy: 0.8513
+2025-10-19 14:19:34 | INFO     | __main__ | Retrieval completed successfully
