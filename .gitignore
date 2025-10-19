@@ -25,4 +25,4 @@ artifacts_pdf/
 
 __pycache__/
 *.py[cod]
-*$py.class
+*$py.classlogs/

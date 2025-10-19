@@ -9,7 +9,7 @@ import fitz  # PyMuPDF
 from PIL import Image
 
 if TYPE_CHECKING:
-    from src.gemini_client import GeminiClient  # for type hints only
+    from src.clients.gemini_client import GeminiClient  # for type hints only
 
 BBox = Tuple[float, float, float, float]
 
@@ -84,7 +84,7 @@ def extract_images(
     dpi: int = 144,
     run_ocr: bool = False,
     captioner: Optional[Callable[..., str]] = None,   # uses captioner(img_bytes, mime=...)
-    save_fullpage: bool = True,
+    save_fullpage: bool = False,
     extract_embedded: bool = True,
     *,
     num_pages: Optional[int] = None,                  # <-- NEW: take only the first N pages

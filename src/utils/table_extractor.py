@@ -11,6 +11,7 @@ import pdfplumber
 
 BBox = Tuple[float, float, float, float]
 
+# fixed structure to represent a table extracted from a PDF
 @dataclass
 class TableArtifact:
     table_id: str
@@ -73,11 +74,17 @@ def extract_tables(
         for pi in range(limit):   # 0-based index of the first N pages
             page_num = pi + 1
             page = pdf.pages[pi]
-
-            # Two simple strategies: "lines" (ruled tables) then "text" (whitespace)
+            # One simple strategies: "lines" (ruled tables)
             strategies = [
-                {"vertical_strategy": "lines", "horizontal_strategy": "lines", "explicit_vertical_lines": None},
-                {"vertical_strategy": "text", "horizontal_strategy": "text"},
+                {
+                    "vertical_strategy": "lines",
+                    "horizontal_strategy": "lines",
+                    "explicit_vertical_lines": None,
+                    "snap_tolerance": 3,
+                    "join_tolerance": 3,
+                    "edge_min_length": 3
+                },
+                # Only keep "text" as a fallback if needed
             ]
 
             found_any = False
